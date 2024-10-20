@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Open+Sans:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+#button{
+    display: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+    z-index: 100;
+}
+.navbar div{
+    list-style: none;
+    padding: 0 30px;
+    left: 50%;
+}
+.navbar div a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+.navbar div a:hover{
+    color: #088178;
+}
+
+.prod-details{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+
+}
+.image{
+    width: 40%;
+}
+img{
+    width: 400px;
+    height: 350px;
+    margin-top: 100px;    
+}
+.prod-content{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.title{
+    font-size: 28px;
+    font-weight: 900;
+    color: #12263a;
+
+}
+.prod-rating{
+    color: #ffc107;
+}
+.prod-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.prod-price span{
+    font-weight: 400;
+}
+.new-price{
+    font-size: 18px;
+    font-weight: 100;
+}
+.last-price span{
+    color: red;
+    padding-left: 15px;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+.new-price span{
+    font-size: 25px;
+    font-weight: 600;
+}
+.about h3{
+    color: #12263a;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.about p{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.features{
+    padding-top: 20px;
+}
+.features h3{
+    font-weight: 600;
+}
+.features ul{
+    padding-left: 20px;
+    padding-top: 8px;
+    line-height: 1.6;
+}
+.buttons .buy-now{
+    background-color: rgba(0, 0, 0, 0.82);
+    padding: 0.8rem 2.3rem;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+    border: none;
+    width: 150px;
+    margin-left: 7px;
+    margin-top: 15px;
+    border-radius: 22px;
+    text-align: center;
+}
+

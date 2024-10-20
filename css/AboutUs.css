@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Open+Sans:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+/* navbar */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+#button{
+    display: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+    z-index: 100;
+}
+.navbar div{
+    list-style: none;
+    padding: 0 30px;
+    left: 50%;
+}
+.navbar div a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+.navbar div a:hover{
+    color: #088178;
+}
+
+/* content */
+.section{
+    width: 100%;
+    min-height: 100vh;
+}
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-section{
+    float: right;
+    width: 55%;
+}
+.image-section{
+    float: left;
+    width: 30%;
+}
+.image-section img{
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+}
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.content-section .content h3{
+    margin-top: 20px;
+    color: #5d5d5d;
+}
+.content-section .content {
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.content-section .content .button{
+    margin-top: 60px;
+}
+.content-section .content .button a{
+    background-color: #3d3d3d;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+
+/* features box */
+.box{
+    margin: 30px 40px 50px;
+    background-color: lightgray;
+    height: 370px;
+    border-radius: 8px;
+}
+.heading{
+    text-align: center;
+    padding-top: 30px;
+}
+.heading h2 span{
+    color: red;
+}
+.box .para{
+    margin: 8px 80px 30px ;
+    text-align: center;
+    font-size: 14px;
+}
+img{
+    width: 70px;
+    height: 70px;
+}
+.features{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.first{
+    text-align: center;
+}
+.first h3{
+    line-height: 1.6;
+    font-size: 18px;
+    padding-top: 10px;
+}
+.first p{
+    padding-top: 10px;
+    line-height: 1.6;
+}
+
+.faq{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* qustions */
+.questions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+}
+.accordion{
+    max-width: 800px;
+}
+.accordion .content-box{
+    position: relative;
+    margin: 10px 20px;
+}
+.accordion .content-box .question{
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.content-box .question::before{
+    content: '>';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+}
+.content-box.active .question::before{
+    content: '^';
+}
+
+.accordion .content-box .answer{
+    position: relative;
+    background: white;
+    height: 0;
+    overflow: hidden;
+    transition: 0.8s;
+    overflow-y: auto;
+}
+.content-box.active .answer{
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+/* feature2 */
+.feature2{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.feature2 .heading {
+    text-align: center;
+}
+.feature2 .para{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.two-bx{
+    display: flex;
+    justify-content: space-evenly;
+}
+.feature2 .two-bx h3{
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+.feature2 .two-bx p{
+    line-height: 1.5;
+}
+.feature2 .two-bx  span{
+    color: red;
+}
+.two-bx .vl{
+    border-left: 1.5px solid black;
+    left: 50%;
+}
+
+
+/* footer */
+.footer{
+    width: 100vw;
+    height: 450px auto;
+    background-color: lightgray;
+    margin-top: 50px;
+}
+.footer .imp{
+    padding-top: 35px;
+    padding-left: 70px;
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+.termBx{
+    padding-left: 70px;
+    padding-top: 30px;
+    
+}
+.termBx .ans{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.8s;
+    overflow-y: auto;
+}
+.termBx .terms{
+    position: relative;
+    padding: 8px;
+    cursor: pointer;
+}
+.termBx.active .ans{
+    height: auto;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.termBx .terms::before{
+    content: '+';
+    padding-right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+}
+.termBx.active .terms::before{
+    content: '-';
+}
+.info{
+    font-size: 12px;
+    margin: 30px 100px 2px;
+}

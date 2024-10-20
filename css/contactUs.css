@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Open+Sans:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+
+}
+/* navbar */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+#button{
+    display: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+    z-index: 100;
+}
+.navbar div{
+    list-style: none;
+    padding: 0 30px;
+    left: 50%;
+}
+.navbar div a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+.navbar div a:hover{
+    color: #088178;
+}
+
+body{
+    background: linear-gradient(90deg, #0e3959 0%, #0e3959 30%, #03a9f5 30%, #03a9f5 100% );
+}
+.contactUs{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.contactUs .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.contactUs .title h3{
+    color: #0e3959;
+    font-weight: 2000;
+}
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.map{
+    grid-area: map;
+}
+.contact{
+    padding: 40px;
+    background: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15); 
+} 
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr; 
+    grid-template-areas: 
+    "form info" 
+    "form map";
+    gap: 20px;    
+}
+.contact h3{
+    color: #0e3959;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.formBox .row50{
+    display: flex;
+    gap: 20px;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+.inputBox span{
+    color: #0e3959;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.inputBox input{
+    padding: 10px;
+    font-size: 0.7 em;
+    outline: none;
+    border: 1px solid #333;
+}
+.inputBox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 150px;
+    margin-bottom:10px;
+}
+button{
+    background: #0e3959;
+    color: white;
+    border: none;
+    font-size: 1.1em;
+    width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.inputBox ::placeholder{
+    color: #999;
+}
+
+.info{
+    background-color: #0e3959;
+}
+.info h3{
+    color: white;
+    margin-bottom: 20px;
+}
+.info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info .infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    color: white;
+    background-color: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.info .infoBox div p{
+    color: white;
+}
+.info .infoBox div a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.links{
+    margin-top: 40px;
+    display: flex;
+}
+.links li{
+    list-style: none;
+    margin-right: 15px;
+}
+.links li a{
+    /* color: white; */
+    font-size: 2em;
+    color: #ccc;
+}
+.links li a:hover{
+    color: white;
+}
+.map{
+    padding: 0;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
