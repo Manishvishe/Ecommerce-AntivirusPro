@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 // Include your database connection code here (e.g., using mysqli or PDO)
 $host = "localhost"; // Your database host
 $username = "root"; // Your database username
-$password = ""; // Your database password
+$password = "manish45"; // Your database password
 $database = "p_booking"; // Your database name
 $port = 3306;
 
